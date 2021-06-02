@@ -1,19 +1,19 @@
-var RestClient = require("./lib/rest_client").RestClient;
-var categories = require("./lib/categories");
-var attributes = require("./lib/attributes");
-var products = require("./lib/products");
-var productMedia = require("./lib/product_media");
-var categoryProducts = require("./lib/category_products");
-var configurableChildren = require("./lib/configurable_children");
-var configurableOptions = require("./lib/configurable_options");
-var taxRates = require("./lib/tax_rates");
-var taxRules = require("./lib/tax_rules");
-var stockItems = require("./lib/stock_items");
-var customers = require("./lib/customers");
-var directory = require("./lib/directory");
-var cart = require("./lib/cart");
-var orders = require("./lib/orders");
-var reviews = require("./lib/reviews");
+const RestClient = require("./lib/rest_client").RestClient;
+const categories = require("./lib/categories");
+const attributes = require("./lib/attributes");
+const products = require("./lib/products");
+const productMedia = require("./lib/product_media");
+const categoryProducts = require("./lib/category_products");
+const configurableChildren = require("./lib/configurable_children");
+const configurableOptions = require("./lib/configurable_options");
+const taxRates = require("./lib/tax_rates");
+const taxRules = require("./lib/tax_rules");
+const stockItems = require("./lib/stock_items");
+const customers = require("./lib/customers");
+const directory = require("./lib/directory");
+const cart = require("./lib/cart");
+const orders = require("./lib/orders");
+const reviews = require("./lib/reviews");
 
 const MAGENTO_API_VERSION = "V1";
 
@@ -50,7 +50,7 @@ module.exports.Magento2Client = class Magento2Client {
   }
 
   addMethods(key, module) {
-    var client = RestClient(options);
+    const client = RestClient(options);
     if (module) {
       if (this[key]) this[key] = Object.assign(this[key], module(client));
       else this[key] = module(client);
