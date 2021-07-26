@@ -40,7 +40,12 @@
   "description": "REST client for accessing Magento 2 functionality.",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "eslint": "^7.31.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "mocha": "^2.4.5",
+    "prettier": "^2.3.2"
   },
   "directories": {
     "lib": "./lib"
@@ -59,7 +64,8 @@
     "url": "git+https://github.com/nouvak/magento2-rest-client.git"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "lint": "eslint --fix ."
   },
   "version": "0.0.14"
 }
