@@ -59,7 +59,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "types": "./types",
+  "types": "./types/index.d.ts",
   "name": "magento2-rest-client",
   "repository": {
     "type": "git",
@@ -68,7 +68,7 @@
   "scripts": {
     "test": "test",
     "lint": "eslint --fix .",
-    "build:types": "npx -p typescript tsc lib/**/*.js --declaration --allowJs --emitDeclarationOnly --outDir types"
+    "build:types": "npx -p typescript tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir types"
   },
   "version": "0.0.14"
 }
