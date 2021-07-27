@@ -59,6 +59,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "types": "./types",
   "name": "magento2-rest-client",
   "repository": {
     "type": "git",
