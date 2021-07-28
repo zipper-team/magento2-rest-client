@@ -5,7 +5,7 @@ export class CustomerController {
     constructor(restClient: RestClient);
     restClient: RestClient;
     create(customerData: any): any;
-    token(loginData: any): Promise<any>;
+    token(loginData: any): any;
     me(requestToken: any): any;
     orderHistory(requestToken: any, pageSize?: number, currentPage?: number): any;
     resetPassword(emailData: any): any;

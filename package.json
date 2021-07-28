@@ -34,6 +34,7 @@
     "@types/node": "^16.4.3",
     "humps": "^1.1.0",
     "oauth-1.0a": "^1.0.1",
+    "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "winston": "^2.2.0"
   },
@@ -69,7 +70,7 @@
   "scripts": {
     "test": "test",
     "lint": "eslint --fix .",
-    "build:types": "typescript tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir types"
+    "build:types": "tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir types"
   },
   "version": "0.0.14"
 }

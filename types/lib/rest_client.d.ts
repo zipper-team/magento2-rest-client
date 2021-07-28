@@ -8,8 +8,8 @@ export class RestClient {
         public: any;
         secret: any;
     };
-    apiCall(request_data: any, request_token?: string, customHeaders?: {}): Promise<any>;
-    consumerToken(login_data: any): Promise<any>;
+    apiCall(request_data: any, request_token?: string, customHeaders?: {}): any;
+    consumerToken(login_data: any): any;
     httpCallSucceeded(response: any): boolean;
     errorString(message: any, parameters: any): any;
     get(resourceUrl: any, request_token?: string): any;

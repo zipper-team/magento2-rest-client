@@ -28,6 +28,7 @@ export class Magento2Client {
     orders: OrderController;
     directories: DirectoryController;
     reviews: ReviewController;
+    stores: StoreController;
     addMethods(key: any, module: any): void;
 }
 import { AttributeController } from "./lib/controllers/attributes";
@@ -45,3 +46,4 @@ import { CartController } from "./lib/controllers/cart";
 import { OrderController } from "./lib/controllers/orders";
 import { DirectoryController } from "./lib/controllers/directory";
 import { ReviewController } from "./lib/controllers/reviews";
+import { StoreController } from "./lib/controllers/store";

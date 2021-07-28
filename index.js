@@ -14,6 +14,7 @@ const {DirectoryController} = require('./lib/controllers/directory');
 const {CartController} = require('./lib/controllers/cart');
 const {OrderController} = require('./lib/controllers/orders');
 const {ReviewController} = require('./lib/controllers/reviews');
+const {StoreController} = require('./lib/controllers/store');
 
 const MAGENTO_API_VERSION = 'V1';
 
@@ -47,6 +48,7 @@ module.exports.Magento2Client = class Magento2Client {
     this.orders = new OrderController(client);
     this.directories = new DirectoryController(client);
     this.reviews = new ReviewController(client);
+    this.stores = new StoreController(client)
   }
 
   addMethods(key, module) {
