@@ -4,6 +4,10 @@ export class StoreController {
      */
     constructor(restClient: RestClient);
     restClient: RestClient;
-    list(): any;
+    /**
+     * @return {Array}
+     * @memberof StoreController
+     */
+    list(): any[];
 }
 import { RestClient } from "../rest_client";
