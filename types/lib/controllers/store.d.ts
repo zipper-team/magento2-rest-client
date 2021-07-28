@@ -5,9 +5,9 @@ export class StoreController {
     constructor(restClient: RestClient);
     restClient: RestClient;
     /**
-     * @return {Array}
+     * @return {Promise<Array>}
      * @memberof StoreController
      */
-    list(): any[];
+    list(): Promise<any[]>;
 }
 import { RestClient } from "../rest_client";
