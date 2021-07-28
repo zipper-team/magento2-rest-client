@@ -34,7 +34,7 @@
     "@types/node": "^16.4.3",
     "humps": "^1.1.0",
     "oauth-1.0a": "^1.0.1",
-    "request": "^2.72.0",
+    "request-promise": "^4.2.6",
     "winston": "^2.2.0"
   },
   "deprecated": false,
@@ -46,7 +46,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "mocha": "^2.4.5",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
   },
   "directories": {
     "lib": "./lib"
@@ -68,7 +69,7 @@
   "scripts": {
     "test": "test",
     "lint": "eslint --fix .",
-    "build:types": "npx -p typescript tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir types"
+    "build:types": "typescript tsc index.js --declaration --allowJs --emitDeclarationOnly --outDir types"
   },
   "version": "0.0.14"
 }
